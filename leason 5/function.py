@@ -1,0 +1,58 @@
+
+
+
+def greet():
+    print("Hello World")
+
+greet()
+
+def greet_person(name):
+    print("Hello", name)
+
+
+greet_person("Erjon")
+
+
+def greet_person1(name, greeting= "Hello"):
+    message = f'{greeting}, {name}'
+    return message
+
+
+default_greeting = greet_person1('Alice')
+
+custum_greeting = greet_person1("Bob", "Hi")
+
+print(default_greeting)
+print(custum_greeting)
+
+
+greeting = "Hello"
+
+def greet1(name):
+    message = f"{greeting}, {name}"
+    print(message)
+
+
+greet1("Bub")
+print(greeting)
+
+
+def greet2(name):
+    message = f"Hello, {name}"
+    print(message)
+
+greet2("Alice")
+
+# print(message)
+
+
+def greet3(name):
+    global messages
+    message = f"{greeting}, {name}!"
+    print(message)
+
+greet3("Bob")
+print(message)
+
+message = f"{greeting}, Student!"
+print(message)
